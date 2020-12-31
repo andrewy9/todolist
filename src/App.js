@@ -10,13 +10,14 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Andrew's Todo List{inputText}</h1>
+        <h1>Andrew's Todo List</h1>
       </header>
       <Form
         setInputText={setInputText}
         inputText={inputText}
         setTodos={setTodos}
-        todos={todos} />
+        todos={todos}
+      />
       <TodoList setTodos={setTodos} todos={todos} />
     </div>
   );
