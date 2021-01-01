@@ -18,6 +18,7 @@ form {
   min-height: 20vh;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 form input,
@@ -44,7 +45,7 @@ form button:hover {
 }
 
 .todo-list {
-  min-width: 30%;
+  min-width: 90%;
   list-style: none;
 }
 
@@ -137,3 +138,30 @@ select {
   transform: scale(1.5);
 }
 */
+
+@media (max-width: 615px) {
+  header {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 505px) {
+  form input {
+    max-width: 300px;
+  }
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: none;
+    background: white;
+  }
+  select {
+    width: 8rem;
+  }
+
+  .todo {
+    font-size: 1rem;
+  }
+}
